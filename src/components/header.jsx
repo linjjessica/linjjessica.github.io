@@ -1,11 +1,17 @@
-import Github from "../images/header/github.png";
-import LinkedIn from "../images/header/linkedin.png";
-import JessicaLin from "../images/header/JessicaLin.png";
-
+import email from "../images/header/email.png";
+import github from "../images/header/github.png";
+import linkedin from "../images/header/linkedin.png";
 
 import "../styles/navbar.css"
 
 import { useNavigate } from "react-router-dom";
+
+const sections = [
+  { id: "about_me", label: "About Me" },
+  { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
+  { id: "contact_me", label: "Contact Me" },
+];
 
 function CustomHeader() {
   const navigate = useNavigate();
@@ -18,6 +24,12 @@ function CustomHeader() {
     navigate("/"); // Navigate to the Welcome page
   };
 
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <div>
       <nav className="navbar">
@@ -26,45 +38,34 @@ function CustomHeader() {
           <div className="dark_title">Full Stack Developer</div>
           <div className="dark_title">I build reliable, scalable, and 
             complex web and mobile applications.</div>
-          <p></p>
           <div className="row_container">
-            <div className="navbar-nav-btn-container">
+            <div className="nav-btn-container">
+              {sections.map((section) => (
               <button
-                id="LoadWelcome"
-                className="navbar-nav-btn"
-                onClick={handleWelcomeClick}
-              >About Me
+                key={section.id}
+                className="nav-btn"
+                onClick={() => scrollToSection(section.id)}
+              >
+                {section.label}
               </button>
-              <button
-                id="LoadWelcome"
-                className="navbar-nav-btn"
-                onClick={handleWelcomeClick}
-              >Experience
-              </button>
-              <button className="navbar-nav-btn">Projects</button>
-              <button
-                id="LoadWelcome"
-                className="navbar-nav-btn"
-                onClick={handleWelcomeClick}
-              >Contact Me
-              </button>
+              ))}
             </div>
           </div>
-          <p></p>
+          {/* <p></p> */}
           <div className="row_container">
-            <div className="navbar-nav-icon-container">
-              <button className="navbar-nav-icon">
-                <img src={null} alt="Python" className="icon" />
+            <div className="icon-btn-container">
+              <button className="icon-btn">
+                <img src={email} alt="Email" className="icon" />
               </button>
             </div>
-            <div className="navbar-nav-icon-container">
-              <button className="navbar-nav-icon">
-                <img src={null} alt="Python" className="icon" />
+            <div className="icon-btn-container">
+              <button className="icon-btn">
+                <img src={linkedin} alt="Python" className="icon" />
               </button>
             </div>
-            <div className="navbar-nav-icon-container">
-              <button className="navbar-nav-icon">
-                <img src={null} alt="Python" className="icon" />
+            <div className="icon-btn-container">
+              <button className="icon-btn">
+                <img src={github} alt="Python" className="icon" />
               </button>
             </div>
           </div>

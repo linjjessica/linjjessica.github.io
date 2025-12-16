@@ -23,54 +23,53 @@ function Welcome() {
   return (
     <div>
       <CustomHeader />
-      <div className="right-side">
-        <div className="home_background">
-          <div className="main-content">
-            <div className="row_container">
-                <div className="image_wrapper">
-                  <div className="rounded_wrapper">
-                    <img 
-                      src={headshot} 
-                      alt="Personal Headshot"
-                      className="image"
-                    />
+        <div className="right-side">
+          <div className="home_background">
+            <div className="main-content">
+              <section id="about_me">
+                <div className="dark_header">About Me</div>
+                <div className="line"></div>
+                <div className="row_container">
+                  <div className="image_wrapper">
+                    <div className="rounded_wrapper">
+                      <img 
+                        src={headshot} 
+                        alt="Personal Headshot"
+                        className="image"
+                      />
+                    </div>
                   </div>
-                </div>
                   <p>
                     Hello world! My name is <b>Jessica Lin</b>, and welcome to my personal portfolio 
-                    website. I coded this from scratch using JavaScript, React, HTML, and CSS. 
+                    website. I coded this from scratch using JavaScript, React, HTML, and CSS and deployed
+                    it statically using Github pages. This website is best for desktop-sized screens, however it is
+                    fully dynamic for screens of width 150 pixels and greater. 
                     <br />
                     <br />
-                    I am a first-generation <b>software engineer</b> with a liberal arts education 
-                    and an interest in <b>full-stack mobile and web app development</b>. I am currently 
-                    located in Los Angeles, but am open to relocation.
-
-                    I focus on <b>full-stack mobile and web app development</b>, 
-                    building responsive, user-centered products that emphasize usability, 
-                    performance, and clean design. 
+                    I’m a first-generation <b>software engineer</b> studying <b>computer science and business administration at the
+                    University of California, Irvine</b>,  
+                    and am currently based in Los Angeles, California.
                     <br />
                     <br />
-                    I am passionate about creating innovative solutions for complex and meaningful 
-                    problems, and I’m fortunate to have the opportunity to work on these projects 
-                    every day. This website details my experience professionally and personally and 
-                    will give you a glimpse into the things I’ve been working on!
+                    I specialize in <b>full-stack mobile and web app development</b>, with a focus on 
+                    sleek design and high-performance. I feel fortunate that I get to turn ideas into polished, 
+                    intuitive products and <b>tackle complex problems through technical solutions. </b>
+                    This website showcases the professional and personal projects that I have been working on.
                     <br />
+                    <br />
+                    In my freetime, I enjoy keeping myself busy with new hobbies. The list consists of traveling, thrifting, skiing, 
+                    working out, and gaming. Ask me about my crawl from Budapest to Prague!
                     <br />
                     <br />
                   </p>
                 </div >
-              <div className="single_container_55">
-            </div>
-            <div className="row_container">
-                
-                  <br />
-                  <div>
-                  
-                  </div>
-                  <br />
-                  <br />
-                  <br />
-                  <div className="pink_subtitle">About me:</div>
+              </section>
+
+
+              <section id="experience">
+                <div className="dark_header">Experience</div>
+                <div className="line"></div>
+                <div className="row_container">
                   <div className="logo_container">
                     <img
                       src={UtahIcon}
@@ -103,6 +102,7 @@ function Welcome() {
                         JavaScript
                       </div>
                     </div>
+                    
                     <div className="welcome_logo_container">
                       <div className="logo_container">
                         <img src={HTMLIcon} alt="HTML" className="icon" />
@@ -117,7 +117,7 @@ function Welcome() {
                         CSS
                       </div>
                     </div>
-
+                    
                     <br />
                   </div>
                   <br />
@@ -130,7 +130,7 @@ function Welcome() {
                     of I&CS
                   </p>
                   <p>• Accounting Intern - Restaurant and Family Mart</p>
-                <div className="row_container">
+                  <div className="row_container">
                   <p>
                     In my freetime, I enjoy thrifting, gaming, working out, playing
                     poker, and finding new music! Feel free to reach out to me
@@ -141,12 +141,28 @@ function Welcome() {
                     .
                     <br />
                     <br />
-                  </p>
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </section>
+
+
+
+
+              <section id="projects">
+                <div className="dark_header">Projects</div>
+                <div className="line"></div>
+              </section>
+              
+              <section id="contact_me">
+                <div className="dark_header">Contact Me</div>
+                <div className="line"></div>
+              </section>
+            </div>
           </div>
+          
         </div>
-      </div>
+        
       <Footer />
     </div>
   );
