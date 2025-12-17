@@ -12,12 +12,15 @@ import HTMLIcon from "../images/welcome/HTMLLogo.png";
 import ReactIcon from "../images/welcome/ReactLogo.png";
 import CSSIcon from "../images/welcome/CSSLogo.png";
 import Background from "../images/welcome/Background.jpg";
+import TroicomAppScreens from "../images/experience/TroicomAppScreens.png";
+import DataCleanerGIF from "../images/experience/DataCleanerGif.mov";
 
 import "../styles/containers.css"
 import "../styles/text.css"
 import "../styles/images.css"
 import "../styles/text.css"
 import "../styles/html_elements.css"
+import "../styles/experience.css"
 
 function Welcome() {
   return (
@@ -43,12 +46,28 @@ function Welcome() {
                     Hello world! My name is <b>Jessica Lin</b>, and welcome to my personal portfolio 
                     website. I coded this from scratch using JavaScript, React, HTML, and CSS and deployed
                     it statically using Github pages. This website is best for desktop-sized screens, however it is
-                    fully dynamic for screens of width 150 pixels and greater. 
+                    fully dynamic for screens of width 300 pixels and greater. 
                     <br />
                     <br />
-                    I’m a first-generation <b>software engineer</b> studying <b>computer science and business administration at the
+                    I am a first-generation <b>software engineer</b> studying <b>computer science and business administration at the
                     University of California, Irvine</b>,  
                     and am currently based in Los Angeles, California.
+                    <br />
+                    <br />
+                    <div className="logo_container">
+                      <img
+                        src={UCILogo}
+                        alt="UC Irvine Logo"
+                        className="icon"
+                      />
+                      <div className="row_container">
+                        <p>
+                          <b>University of California, Irvine<br />
+                          B.S. in Computer Science<br />
+                          B.A. in Business Administration<br /></b>
+                        </p>
+                      </div>
+                    </div>
                     <br />
                     <br />
                     I specialize in <b>full-stack mobile and web app development</b>, with a focus on 
@@ -69,15 +88,50 @@ function Welcome() {
               <section id="experience">
                 <div className="dark_header">Experience</div>
                 <div className="line"></div>
-                <div className="row_container">
-                  <div className="logo_container">
-                    <img
-                      src={UtahIcon}
-                      alt="Salt Lake City, Utah"
-                      className="icon"
-                    />
-                    Salt Lake City, Utah
+                <p></p>
+                <div className="experience_container">
+                  <div className="container_20">
+                    Jun-Aug 2026
                   </div>
+                  <div className="container_80">
+                    <div className="dark_large_text">Ernst & Young</div>
+                    <div className="dark_large_text">Technology Consulting Intern</div>
+                    <p>
+                      Built a Python/Pandas data-validation tool that automated 
+                      the data validation process across 500+ inconsistent CSV files. 
+                      Designed and implemented a Streamlit UI that let users upload files, 
+                      view reports, and download results.
+                    </p>
+                    <video autoPlay loop muted playsInline style={{ width: "100%",}}>
+                      <source src={DataCleanerGIF} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <div className="experience_container">
+                  <div className="container_20">
+                    Oct 2025-Jun 2026
+                  </div>
+                  <div className="container_80">
+                    <div className="dark_large_text">Troicom</div>
+                    <div className="dark_large_text">Software Engineering Intern</div>
+                    <p>
+                      Redesigned 11 mobile screens for Troicom's DropGO, a LoRa-connected game. 
+                      Authored 5 C# scripts to connect UI/UX to backend logic, including a secure 
+                      sign-out flow and Bluetooth device toggling page. Oversaw the end-to-end
+                      app deployment process, producing and editing 7 app store previews and  
+                      2 professional app demo videos.
+                    </p>
+                      <img 
+                        src={TroicomAppScreens} 
+                        alt="Personal Headshot"
+                        className="image"
+                      />
+                  </div>
+                  
+                </div>
+                
+                <div className="row_container">
                   <div className="logo_container">
                     <img src={LAIcon} alt="Los Angeles" className="icon" />
                     Los Angeles Metrapolitan Area
@@ -148,16 +202,22 @@ function Welcome() {
 
 
 
-
               <section id="projects">
                 <div className="dark_header">Projects</div>
                 <div className="line"></div>
               </section>
               
-              <section id="contact_me">
-                <div className="dark_header">Contact Me</div>
+              <section id="skills">
+                <div className="dark_header">Skills</div>
                 <div className="line"></div>
               </section>
+
+              <section id="extracuriculars">
+                <div className="dark_header">Extracurriculars</div>
+                <div className="line"></div>
+              </section>
+
+
             </div>
           </div>
           

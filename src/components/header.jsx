@@ -10,7 +10,8 @@ const sections = [
   { id: "about_me", label: "About Me" },
   { id: "experience", label: "Experience" },
   { id: "projects", label: "Projects" },
-  { id: "contact_me", label: "Contact Me" },
+  { id: "skills", label: "Skills" },
+  { id: "extracurriculars", label: "Extracurriculars" },
 ];
 
 function CustomHeader() {
@@ -54,19 +55,35 @@ function CustomHeader() {
           {/* <p></p> */}
           <div className="row_container">
             <div className="icon-btn-container">
-              <button className="icon-btn">
-                <img src={email} alt="Email" className="icon" />
-              </button>
+              <a
+                href="mailto:linjjessica@gmail.com"
+                className="icon-btn"
+                aria-label="Email"
+              >
+                <img src={email} alt="Email" />
+              </a>
             </div>
             <div className="icon-btn-container">
-              <button className="icon-btn">
-                <img src={linkedin} alt="Python" className="icon" />
-              </button>
+                <a
+                  href="https://www.linkedin.com/in/jjessicalin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="icon-btn"
+                  aria-label="LinkedIn"
+                >
+                  <img src={linkedin} alt="LinkedIn" />
+                </a>
             </div>
             <div className="icon-btn-container">
-              <button className="icon-btn">
-                <img src={github} alt="Python" className="icon" />
-              </button>
+              <a
+                  href="https://www.github.com/linjjessica"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="icon-btn"
+                  aria-label="LinkedIn"
+                >
+                <img src={github} alt="Python" />
+              </a>
             </div>
           </div>
         </div>
