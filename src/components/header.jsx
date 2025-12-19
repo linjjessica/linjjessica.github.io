@@ -9,8 +9,8 @@ import { useNavigate } from "react-router-dom";
 const sections = [
   { id: "about_me", label: "About Me" },
   { id: "experience", label: "Experience" },
-  { id: "projects", label: "Projects" },
   { id: "skills", label: "Skills" },
+    { id: "projects", label: "Projects" },
   { id: "extracurriculars", label: "Extracurriculars" },
 ];
 

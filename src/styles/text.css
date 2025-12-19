@@ -62,17 +62,36 @@
   text-align: left;
 }
 
+.dark_large_text {
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    color: #491a37;
+    font-size: clamp(.8rem, 3vw, 1.5rem);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-align: left;
+}
 
-/* .subtitle {
-  padding-bottom: 10px;
-  align-self: flex-start;
-  font-size: clamp(.5rem, 3vw, 1rem);;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 600;
-  text-align: left;
-  width: 100%; 
-  color: #491a37;
-} */
+.dark_pink_text {
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    color: #a83f80;
+    font-size: clamp(.8rem, 3vw, 1.5rem);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-align: left;
+}
+
+.curved-outline-box p,
+.curved-outline-box span,
+.curved-outline-box div {
+  color: #eb5fb5;
+  padding: 0;
+  margin: 0;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: clamp(.5rem, 3vw, 1rem);
+}
 
 .montserrat display-regular {
   font-family: 'CourierPS';

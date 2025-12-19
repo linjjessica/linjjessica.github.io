@@ -3,7 +3,7 @@
 }
 
 .right-side {
-  background-image: url('../images/welcome/Background.jpg');
+  background-image: url('../images/welcome/LargerBackground.png');
   margin-left: 40vw;             /* start after the 40vw sidebar */
   width: 60vw;     /* = 60vw, fills the rest of the screen */
   min-height: 100vh;
@@ -11,6 +11,8 @@
 }
 
 .main-content {
+  background-image: url('../images/welcome/LargerBackground.png');
+  background-size: cover;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
@@ -19,14 +21,6 @@
   flex-direction: column;
   flex-wrap: wrap; /* Allows items to wrap to the next line */
   align-items: flex-start; /* Aligns items to the start of the container */
-}
-
-.home_background {
-  /* background-position: 0 -73px; */
-  background-image: url('../images/welcome/Background.jpg');
-  background-repeat: repeat;
-  /* height: 100%; */
-  /* width: 100%; */
 }
 
 .welcome_logo_container {
@@ -38,12 +32,44 @@
   flex-direction: column; */
 }
 
-.logo_container {
+.uci_container {
   display: flex;
   justify-content: left;
   align-items: center;
   padding-left: clamp(1rem, 2vw, 2rem);
   padding-right: clamp(1rem, 2vw, 2rem);
+}
+
+.skill_icon_container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  margin-top: clamp(.5rem, 1vw, 1rem);
+  margin-bottom: clamp(.5rem, 1vw, 1rem);
+  margin-left: clamp(.5rem, 5vw, 5rem);
+  margin-right: clamp(.5rem, 5vw, 5rem);
+}
+
+.skill_icon_container img {
+  height: clamp(3rem, 6vw, 8rem);
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.row_container_left_aligned {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: clamp(.5rem, 2vw, 1rem);
+}
+
+.row_container_left_aligned2 {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: flex-end; 
+  flex-wrap: wrap;
 }
 
 .row_container {
@@ -57,18 +83,13 @@
   /* min-height: 100px; */
 }
 
-.single_container_45 {
-  /* padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  flex: 0 0 45%;  */
-}
-
-.single_container_55 {
-  /* padding-left: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  flex: 0 0 55%; */
+.curved-outline-box {
+  border: 2px solid #eb5fb5;  /* outline color */
+  border-radius: 15px;        /* curves */
+  background-color: transparent;
+  padding: 7px;              /* space inside */
+  width: fit-content; 
+  margin: 5px;
 }
 
 .fixed-page-height-container {
