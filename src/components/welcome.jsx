@@ -404,7 +404,6 @@ function Welcome() {
 
           </div>
         </div>
-      <Footer />
     </div>
   );
 }
