@@ -16,6 +16,10 @@ import ReactLogo from "../images/experience/technologies/ReactLogo.png";
 import CSSLogo from "../images/experience/technologies/CSSLogo.png";
 import NodeLogo from "../images/experience/technologies/NodeLogo.png";
 import PostgreSQLLogo from "../images/experience/technologies/PostgreSQLLogo.png";
+import DjangoLogo from "../images/experience/technologies/PythonDjango.png";
+import MySQLLogo from "../images/experience/technologies/MySQLLogo.png";
+import FlaskLogo from "../images/experience/technologies/FlaskLogo.png";
+import MongoDBLogo from "../images/experience/technologies/MongoDBLogo.png";
 import Background from "../images/welcome/SmallerBackgroundWithButterly.jpg";
 import TroicomAppScreens from "../images/experience/TroicomAppScreens.png";
 import DataCleanerGIF from "../images/experience/DataCleanerGif.mov";
@@ -188,101 +192,137 @@ function Welcome() {
               <div className="row_container">
                 <div className="skill_card"><div className="skill_inner">
                   <div className="skill_front">
-                    <img src={PythonLogo} alt="Python" className="icon" />
+                    <img src={PythonLogo} alt="Python"/>
                   </div>
                   <div className="skill_back">
-                    Python
+                    <div className="skill_back_text"> Python</div>
                   </div>
                 </div></div>
                 <div className="skill_card"><div className="skill_inner">
                   <div className="skill_front">
-                    <img src={CPlusLogo} alt="C++" className="icon" />
+                    <img src={CPlusLogo} alt="C++"/>
                   </div>
                   <div className="skill_back">
-                    C++
+                    <div className="skill_back_text"> C++</div>
                   </div>
                 </div></div>
                 <div className="skill_card"><div className="skill_inner">
                   <div className="skill_front">
-                    <img src={CSharpLogo} alt="C#" className="icon" />
+                    <img src={CSharpLogo} alt="C#"/>
                   </div>
                   <div className="skill_back">
-                    C#
+                    <div className="skill_back_text"> C#</div>
                   </div>
                 </div></div>
                 <div className="skill_card"><div className="skill_inner">
                   <div className="skill_front">
-                    <img src={CLogo} alt="C" className="icon" />
+                    <img src={CLogo} alt="C"/>
                   </div>
                   <div className="skill_back">
-                    C
+                    <div className="skill_back_text"> C</div>
                   </div>
                 </div></div>
                 <div className="skill_card"><div className="skill_inner">
                   <div className="skill_front">
-                    <img src={JavaScriptLogo} alt="JavaScript" className="icon" />
+                    <img src={JavaScriptLogo} alt="JavaScript"/>
                   </div>
                   <div className="skill_back">
-                    JavaScript
+                    <div className="skill_back_text"> JavaScript</div>
                   </div>
                 </div></div>
                 <div className="skill_card"><div className="skill_inner">
                   <div className="skill_front">
-                    <img src={JavaLogo} alt="Java" className="icon" />
+                    <img src={JavaLogo} alt="Java"  />
                   </div>
                   <div className="skill_back">
-                    Java
+                    <div className="skill_back_text"> Java</div>
                   </div>
                 </div></div>
                 <div className="skill_card"><div className="skill_inner">
                   <div className="skill_front">
-                    <img src={NodeLogo} alt="Node" className="icon" />
+                    <img src={NodeLogo} alt="Node"  />
                   </div>
                   <div className="skill_back">
-                    Node
+                    <div className="skill_back_text"> Node</div>
                   </div>
                 </div></div>
                 <div className="skill_card"><div className="skill_inner">
                   <div className="skill_front">
-                    <img src={PostgreSQLLogo} alt="PostgreSQL" className="icon" />
+                    <img src={PostgreSQLLogo} alt="PostgreSQL"  />
                   </div>
                   <div className="skill_back">
-                    PostgreSQL
+                    <div className="skill_back_text"> PostgreSQL</div>
+                  </div>
+                </div></div>
+                <div className="skill_card"><div className="skill_inner">
+                  <div className="skill_front">
+                    <img src={DjangoLogo} alt="Django"  />
+                  </div>
+                  <div className="skill_back">
+                    <div className="skill_back_text"> MySQL</div>
+                  </div>
+                </div></div>
+                <div className="skill_card"><div className="skill_inner">
+                  <div className="skill_front">
+                    <img src={MySQLLogo} alt="MySQL"  />
+                  </div>
+                  <div className="skill_back">
+                    <div className="skill_back_text"> MySQL</div>
+                  </div>
+                </div></div>
+                <div className="skill_card"><div className="skill_inner">
+                  <div className="skill_front">
+                    <img src={FlaskLogo} alt="Flask"  />
+                  </div>
+                  <div className="skill_back">
+                    <div className="skill_back_text"> Flask</div>
+                  </div>
+                </div></div>
+                <div className="skill_card"><div className="skill_inner">
+                  <div className="skill_front">
+                    <img src={MongoDBLogo} alt="MongoDB"  />
+                  </div>
+                  <div className="skill_back">
+                    <div className="skill_back_text"> MongoDB</div>
                   </div>
                 </div></div>
                 
-                
+
               </div>
               <div className="row_container"><b>Frontend: </b></div>
               <div className="row_container">
-                <div className="skill_icon_container">
-                  <img src={HTMLLogo} alt="HTML" className="icon" />
-                  HTML
-                </div>
-                <div className="skill_icon_container">
-                  <img src={ReactLogo} alt="React" className="icon" />
-                  React
-                </div>
-                <div className="skill_icon_container">
-                  <img src={CSSLogo} alt="CSS" className="icon" />
-                  CSS
-                </div>
-                <div className="skill_icon_container">
-                  <img src={PythonLogo} alt="Python" className="icon" />
-                  Python
-                </div>
-                <div className="skill_icon_container">
-                  <img src={CPlusLogo} alt="C++" className="icon" />
-                  C++
-                </div>
-                <div className="skill_icon_container">
-                  <img
-                    src={JavaScriptLogo}
-                    alt="JavaScript"
-                    className="icon"
-                  />
-                  JavaScript
-                </div>
+                <div className="skill_card"><div className="skill_inner">
+                  <div className="skill_front">
+                    <img src={HTMLLogo} alt="HTML"  />
+                  </div>
+                  <div className="skill_back">
+                    <div className="skill_back_text"> HTML</div>
+                  </div>
+                </div></div>
+                <div className="skill_card"><div className="skill_inner">
+                  <div className="skill_front">
+                    <img src={ReactLogo} alt="React"  />
+                  </div>
+                  <div className="skill_back">
+                    <div className="skill_back_text"> React</div>
+                  </div>
+                </div></div>
+                <div className="skill_card"><div className="skill_inner">
+                  <div className="skill_front">
+                    <img src={CSSLogo} alt="CSS"  />
+                  </div>
+                  <div className="skill_back">
+                    <div className="skill_back_text"> CSS</div>
+                  </div>
+                </div></div>
+                <div className="skill_card"><div className="skill_inner">
+                  <div className="skill_front">
+                    <img src={JavaScriptLogo} alt="JavaScript"  />
+                  </div>
+                  <div className="skill_back">
+                    <div className="skill_back_text"> JavaScript</div>
+                  </div>
+                </div></div>
               </div>
 
               <div className="row_container"><b>Developer Tools: </b></div>

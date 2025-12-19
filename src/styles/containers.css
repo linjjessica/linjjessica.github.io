@@ -65,13 +65,17 @@
 .skill_card {
   width: clamp(2rem, 12vw, 10rem);
   height: clamp(2rem, 12vw, 10rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   perspective: 1000px;
   margin: clamp(.5rem, 2vw, 2rem);
 }
 
 .skill_card img{
-  height: clamp(.5rem, 6vw, 8rem);
-  width: auto;
+  max-height: 70%;
+  max-width: 70%;
+  object-fit: contain;
 }
 
 .skill_inner {
@@ -105,6 +109,23 @@
 .skill_back {
   background-color: #edd3d0;
   transform: rotateY(180deg);
+  color: #491a37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill_back_text {
+  display: flex;
+  width: 80%; 
+  font-weight: 1000;
+  font-size: clamp(.5rem, 2vw, 4rem);
+  white-space: normal; 
+  word-break: break-word; 
+  color: #491a37;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 .row_container_left_aligned {

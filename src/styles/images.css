@@ -26,30 +26,8 @@
   object-fit: contain; 
 }
 
-.company_logo {
-  display: flex;
-  align-items: stretch;
-}
-
-.company_logo img {
-  height: clamp(.8rem, 5vw, 3rem);
-  width: auto;
-  object-fit: contain;
-}
-
-.company_text {
-  color: #491a37;
-  font-size: clamp(.8rem, 3vw, 1.5rem);
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 600;
-  text-align: left;
-  white-space: normal; 
-  width: 100%;
-}
-
 .icon {
   width: 40px;
-  padding-right:
 }
 
 .background-image {
