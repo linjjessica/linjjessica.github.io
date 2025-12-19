@@ -46,7 +46,7 @@
   height: 3px;
 }
 .pink_line {
-  background-color: #ff66c4;
+  background-color: #a83f80;
   width: 100%;
   height: 3px;
 }
@@ -78,7 +78,7 @@
 }
 
 .large_pink_text {
-  color: #ff66c4;
+  color: #a83f80;
   font-size: clamp(.5rem, 3vw, 1rem);
   font-family: 'Courier New', Courier, monospace;
   font-weight: 800;
