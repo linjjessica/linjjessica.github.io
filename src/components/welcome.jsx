@@ -188,45 +188,70 @@ function Welcome() {
               <div className="row_container">
                 <div className="skill_card"><div className="skill_inner">
                   <div className="skill_front">
-                    <img src={PythonLogo} className="icon" />
+                    <img src={PythonLogo} alt="Python" className="icon" />
                   </div>
                   <div className="skill_back">
                     Python
                   </div>
                 </div></div>
+                <div className="skill_card"><div className="skill_inner">
+                  <div className="skill_front">
+                    <img src={CPlusLogo} alt="C++" className="icon" />
+                  </div>
+                  <div className="skill_back">
+                    C++
+                  </div>
+                </div></div>
+                <div className="skill_card"><div className="skill_inner">
+                  <div className="skill_front">
+                    <img src={CSharpLogo} alt="C#" className="icon" />
+                  </div>
+                  <div className="skill_back">
+                    C#
+                  </div>
+                </div></div>
+                <div className="skill_card"><div className="skill_inner">
+                  <div className="skill_front">
+                    <img src={CLogo} alt="C" className="icon" />
+                  </div>
+                  <div className="skill_back">
+                    C
+                  </div>
+                </div></div>
+                <div className="skill_card"><div className="skill_inner">
+                  <div className="skill_front">
+                    <img src={JavaScriptLogo} alt="JavaScript" className="icon" />
+                  </div>
+                  <div className="skill_back">
+                    JavaScript
+                  </div>
+                </div></div>
+                <div className="skill_card"><div className="skill_inner">
+                  <div className="skill_front">
+                    <img src={JavaLogo} alt="Java" className="icon" />
+                  </div>
+                  <div className="skill_back">
+                    Java
+                  </div>
+                </div></div>
+                <div className="skill_card"><div className="skill_inner">
+                  <div className="skill_front">
+                    <img src={NodeLogo} alt="Node" className="icon" />
+                  </div>
+                  <div className="skill_back">
+                    Node
+                  </div>
+                </div></div>
+                <div className="skill_card"><div className="skill_inner">
+                  <div className="skill_front">
+                    <img src={PostgreSQLLogo} alt="PostgreSQL" className="icon" />
+                  </div>
+                  <div className="skill_back">
+                    PostgreSQL
+                  </div>
+                </div></div>
                 
-                <div className="skill_icon_container">
-                  <img src={PythonLogo} alt="Python" className="icon" />
-                  Python
-                </div>
-                <div className="skill_icon_container">
-                  <img src={CPlusLogo} alt="C++" className="icon" />
-                  C++
-                </div>
-                <div className="skill_icon_container">
-                  <img src={CSharpLogo} alt="C#" className="icon" />
-                  C#
-                </div>
-                <div className="skill_icon_container">
-                  <img src={CLogo} alt="C" className="icon" />
-                  C
-                </div>
-                <div className="skill_icon_container">
-                  <img src={JavaScriptLogo} alt="Java" className="icon" />
-                  JavaScript
-                </div>
-                <div className="skill_icon_container">
-                  <img src={JavaLogo} alt="JavaScript" className="icon" />
-                  Java
-                </div>
-                <div className="skill_icon_container">
-                  <img src={NodeLogo} alt="Node" className="icon" />
-                  Node
-                </div>
-                <div className="skill_icon_container">
-                  <img src={PostgreSQLLogo} alt="PostgreSQL" className="icon" />
-                  PostgreSQL
-                </div>
+                
               </div>
               <div className="row_container"><b>Frontend: </b></div>
               <div className="row_container">
