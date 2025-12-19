@@ -376,8 +376,15 @@ function Welcome() {
               <div className="dark_line"></div>
               <p></p>
               <div className="experience_container">
-                <div className="row_container">
-                  <p>  </p>
+                  <div className="container_20">
+                    Date
+                  </div>
+                <div className="container_80">
+                  <div className="dark_large_text">Project Name</div>
+                  <p>
+                    <p></p>
+                  </p>
+                
                 </div>
               </div>
               <p></p>
