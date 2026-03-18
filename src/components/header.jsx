@@ -6,6 +6,7 @@ import "../styles/navbar.css"
 
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const sections = [
   { id: "about_me", label: "About Me" },
@@ -27,7 +28,7 @@ function CustomHeader() {
         }
       });
     },
-    { root: null, rootMargin: "0px", threshold: 0.5 }
+    { root: null, rootMargin: "-10% 0px -10% 0px", threshold: 0.2 }
   );
 
   sections.forEach((section) => {
@@ -56,7 +57,12 @@ function CustomHeader() {
 
   return (
     <div>
-      <nav className="navbar">
+      <motion.nav 
+        className="navbar"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         <div className="navbar-nav-content">
           <div className="container">
             <div className="pink_title">Jessica Lin</div>
@@ -113,7 +119,7 @@ function CustomHeader() {
             </div>
           </div>
         </div>
-      </nav>
+      </motion.nav>
     </div>
   );
 }

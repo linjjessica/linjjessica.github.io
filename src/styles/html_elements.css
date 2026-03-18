@@ -25,6 +25,7 @@ body {
 p {
   font-size: clamp(.5rem, 3vw, 1rem);
   font-family: inherit;
+  margin-bottom: 0.75rem; /* Reduced from 1rem */
 }
 
 b {

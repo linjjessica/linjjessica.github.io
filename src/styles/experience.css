@@ -1,13 +1,13 @@
 .experience_container {
     height: 100%;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: flex-start;
     flex: 1;
     background-color: #edd3d0;
     border-radius: 20px;
     align-items: stretch; 
-    margin-bottom: 15px
+    margin: 0 auto 3rem; /* Increased and standardized spacing */
 }
 
 .container_20 {
