@@ -71,8 +71,7 @@ function Welcome() {
                   <p>
                     Hello world! My name is <b>Jessica Lin</b>, and welcome to my personal portfolio 
                     website. I coded this from scratch using JavaScript, React, HTML, and CSS, and deployed
-                    it statically using Github pages. This website is best for desktop-sized screens, however it is
-                    fully dynamic for screens of width 300 pixels and greater. Feel free to <b>reach out to me at&nbsp;
+                    it using Vercel. Feel free to <b>reach out to me at&nbsp;
                     <a href="mailto:linjjessica@gmail.com" className="email-link">
                       linjjessica@gmail.com
                     </a>
