@@ -24,6 +24,8 @@ import GitLogo from "../images/experience/technologies/GitLogo.png";
 import TroicomAppScreens from "../images/experience/TroicomAppScreens.png";
 import DataCleanerGIF from "../images/experience/DataCleanerGif.mov";
 import EYLogo from "../images/experience/EYLogo.png";
+import WaveAutomateLogo from "../images/experience/WaveAutomateLogo.png";
+import WaveAutomateDashboard from "../images/experience/WaveAutomateDashboard.png";
 import TroicomLogo from "../images/experience/TroicomLogo.png";
 import DSPWebsite from "../images/experience/DSPWebsite.png";
 import SCOUT_DASHBOARD from "../images/experience/ScoutDashboard.png";
@@ -127,6 +129,102 @@ function Welcome() {
               <div className="dark_header">Experience</div>
               <div className="dark_line"></div>
               <p></p>
+              <motion.div 
+                className="experience_container"
+                whileInView={{ scale: 1.05 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="container_20">
+                  Jun-Aug 2026
+                </div>
+                <div className="container_80">
+                  <div className="row_container_left_aligned">
+                    <div className="company_logo"><img src={WaveAutomateLogo} alt="Wave Automate" className="icon" /></div>
+                    <div className="company_text">Wave Automate</div>
+                  </div>
+                  <div className="dark_large_text">Software Engineer Intern</div>
+                  <p>
+                    Architected a production-ready Stripe subscription system in a Next.js SaaS, 
+                    implementing webhook features to manage plans. 
+                    Migrated Postgres schema with Drizzle ORM and supported Cloudflare-tunneled 
+                    webhook flows for local and production testing. 
+                  </p>
+                  
+                  <motion.a 
+                    href="#!" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="project-dashboard-wrapper"
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.3 }}
+                    style={{ 
+                      display: 'block', 
+                      position: 'relative', 
+                      marginTop: '20px', 
+                      textDecoration: 'none' 
+                    }}
+                  >
+                    <div style={{ position: 'relative' }}>
+                      <img 
+                        src={WaveAutomateDashboard} 
+                        alt="Wave Automate Dashboard" 
+                        className="project-dashboard-image"
+                        style={{ 
+                          width: '100%', 
+                          borderRadius: '8px',
+                          boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                          display: 'block'
+                        }}
+                      />
+                      <div style={{
+                        position: 'absolute',
+                        top: '15px',
+                        right: '15px',
+                        backgroundColor: 'rgba(73, 26, 55, 0.6)',
+                        padding: '8px',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: '#ffff',
+                        transition: 'background-color 0.3s ease'
+                      }}>
+                        <svg 
+                          xmlns="https://waveautomate.com/" 
+                          width="18" 
+                          height="18" 
+                          viewBox="0 0 24 24" 
+                          fill="none" 
+                          stroke="currentColor" 
+                          strokeWidth="2" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
+                        >
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                          <polyline points="15 3 21 3 21 9"></polyline>
+                          <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                      </div>
+                    </div>
+                  </motion.a>
+                  <div className="row_container_left_aligned2">
+                    <div className="curved-outline-box">
+                      <p> Next.js </p>
+                    </div>
+                    <div className="curved-outline-box">
+                      <p> Postgres </p>
+                    </div>
+                    <div className="curved-outline-box">
+                      <p> Drizzle ORM </p>
+                    </div>
+                    <div className="curved-outline-box">
+                      <p> Cloudflare </p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </motion.div>
               <motion.div 
                 className="experience_container"
                 whileInView={{ scale: 1.05 }}
@@ -459,6 +557,7 @@ function Welcome() {
                     viewport={{ once: false, amount: 0.5 }}
                     transition={{ duration: 0.3 }}
                   >
+  
                     <div className="container_20">Dec 2025–Jan 2026</div>
                       <div className="container_80">
                         <div className="row_container_left_aligned">
@@ -470,21 +569,62 @@ function Welcome() {
 
                         <div className="dark_large_text">Founding Engineer</div>
 
-                        <a href="https://scoutfinance.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" className="project-link-button">
-                          <img 
-                            src={SCOUT_DASHBOARD} 
-                            alt="Scout Dashboard" 
-                            className="project-dashboard-image"
-                            style={{ 
-                              width: '100%', 
-                              marginTop: '20px', 
-                              borderRadius: '8px',
-                              boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-                              transition: 'transform 0.3s ease-in-out',
-                              cursor: 'pointer'
-                            }}
-                          />
-                        </a>
+                        <motion.a 
+                          href="https://scoutfinance.vercel.app/dashboard" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="project-link-button"
+                          whileHover={{ scale: 1.02 }}
+                          transition={{ duration: 0.3 }}
+                          style={{ 
+                            display: 'block',
+                            position: 'relative', 
+                            textDecoration: 'none',
+                            marginTop: '20px'
+                          }}
+                        >
+                          <div style={{ position: 'relative' }}>
+                            <img 
+                              src={SCOUT_DASHBOARD} 
+                              alt="Scout Dashboard" 
+                              className="project-dashboard-image"
+                              style={{ 
+                                width: '100%', 
+                                borderRadius: '8px',
+                                boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                                display: 'block'
+                              }}
+                            />
+                            <div style={{
+                              position: 'absolute',
+                              top: '15px',
+                              right: '15px',
+                              backgroundColor: 'rgba(73, 26, 55, 0.6)',
+                              padding: '8px',
+                              borderRadius: '50%',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              color: '#ffff'
+                            }}>
+                              <svg 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                width="18" 
+                                height="18" 
+                                viewBox="0 0 24 24" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                strokeWidth="2" 
+                                strokeLinecap="round" 
+                                strokeLinejoin="round"
+                              >
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                              </svg>
+                            </div>
+                          </div>
+                        </motion.a>
 
                         {/* <div className="dark_medium_text">By Jessica Lin and Isaias Gonzales</div> */}
 
