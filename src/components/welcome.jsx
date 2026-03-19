@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import CustomHeader from "./header";
 import Footer from "./footer";
@@ -12,7 +11,7 @@ import CPlusLogo from "../images/experience/technologies/C++Logo.png";
 import CSharpLogo from "../images/experience/technologies/CSharpLogo.png";
 import CLogo from "../images/experience/technologies/CLogo.png";
 import JavaLogo from "../images/experience/technologies/JavaLogo.png";
-import JavaScriptLogo from "../images/experience/technologies//JavaScriptLogo.png";
+import JavaScriptLogo from "../images/experience/technologies/JavaScriptLogo.png";
 import HTMLLogo from "../images/experience/technologies/HTMLLogo.png";
 import ReactLogo from "../images/experience/technologies/ReactLogo.png";
 import CSSLogo from "../images/experience/technologies/CSSLogo.png";
