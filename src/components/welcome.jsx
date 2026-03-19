@@ -525,7 +525,7 @@ function Welcome() {
                     <div className="company_text">Delta Sigma Pi</div>
                   </div>
                   <div className="dark_large_text">Director of Technology</div>
-                  <p>
+                  <div className="experience_description">
                     <div className="rounded_wrapper">
                       <img 
                         src={DSPWebsite} 
@@ -536,7 +536,7 @@ function Welcome() {
                     Modernized the website's architecture and automated the data input process. 
                     Managed digital operations for 45+ members, including website maintenance, 
                     email configuration, and domain management.
-                  </p>
+                  </div>
                 </div>
                 
               </motion.div>

@@ -4,7 +4,6 @@ import linkedin from "../images/header/linkedin.png";
 
 import "../styles/navbar.css"
 
-import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
@@ -38,8 +37,6 @@ function CustomHeader() {
 
   return () => observer.disconnect();
   }, []);
-
-  const navigate = useNavigate();
 
 
   const scrollToSection = (id) => {
