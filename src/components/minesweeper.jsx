@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import CustomHeader from "./header";
 import Board from "./board";
 import Footer from "./footer";
 import { createInitialBoard } from "../engine/minesweeperEngine";
 import ResetButton from "./resetButton";
-import { printBoard, checkWin, checkLoss } from "../engine/minesweeperEngine";
+import { printBoard } from "../engine/minesweeperEngine";
 
 function Minesweeper() {
   const [board, setBoard] = useState(createInitialBoard());

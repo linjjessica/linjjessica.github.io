@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
 import CustomHeader from "./header";
-import Footer from "./footer";
 import headshot from "../images/welcome/website_headshot.jpg";
 import UCILogo from "../images/welcome/UCILogo.png";
-import UtahIcon from "../images/welcome/Utah.jpg";
-import LAIcon from "../images/welcome/LA.png";
 import DSPLogo from "../images/experience/DSPLogo.png";
 import PythonLogo from "../images/experience/technologies/PythonLogo.png";
 import CPlusLogo from "../images/experience/technologies/C++Logo.png";
@@ -24,7 +21,6 @@ import MongoDBLogo from "../images/experience/technologies/MongoDBLogo.png";
 import TypeScriptLogo from "../images/experience/technologies/TypescriptLogo.png";
 import AWSLogo from "../images/experience/technologies/AWSLogo.png";
 import GitLogo from "../images/experience/technologies/GitLogo.png";
-import Background from "../images/welcome/SmallerBackgroundWithButterly.jpg";
 import TroicomAppScreens from "../images/experience/TroicomAppScreens.png";
 import DataCleanerGIF from "../images/experience/DataCleanerGif.mov";
 import EYLogo from "../images/experience/EYLogo.png";

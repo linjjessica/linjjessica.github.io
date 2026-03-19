@@ -1,4 +1,3 @@
-import React from "react";
 import MinesweeperFlag from "../images/minesweeper/minesweeper_flag.png";
 
 /**
@@ -6,7 +5,6 @@ import MinesweeperFlag from "../images/minesweeper/minesweeper_flag.png";
  */
 function determineTileStateClass(
   isMine,
-  isFlagged,
   isRevealed,
   adjacentMines,
   className
@@ -50,7 +48,6 @@ const Tile = ({
 }) => {
   const tileStateClass = determineTileStateClass(
     isMine,
-    isFlagged,
     isRevealed,
     adjacentMines,
     className
