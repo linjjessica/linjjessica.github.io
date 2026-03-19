@@ -208,9 +208,16 @@ function Welcome() {
                       </div>
                     </div>
                   </motion.a>
+                  <p></p>
                   <div className="row_container_left_aligned2">
                     <div className="curved-outline-box">
                       <p> Next.js </p>
+                    </div>
+                    <div className="curved-outline-box">
+                      <p> Stripe </p>
+                    </div>
+                    <div className="curved-outline-box">
+                      <p> Google Cloud </p>
                     </div>
                     <div className="curved-outline-box">
                       <p> Postgres </p>
@@ -666,6 +673,7 @@ function Welcome() {
                   </div>
                   <div className="dark_large_text">Director of Technology</div>
                   <div className="experience_description">
+                    <p></p>
                     <div className="rounded_wrapper">
                       <img 
                         src={DSPWebsite} 
@@ -673,6 +681,7 @@ function Welcome() {
                         className="image"
                       />
                     </div>
+                    <p></p>
                     Modernized the website's architecture and automated the data input process. 
                     Managed digital operations for 45+ members, including website maintenance, 
                     email configuration, and domain management.
