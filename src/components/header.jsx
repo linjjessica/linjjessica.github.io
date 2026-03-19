@@ -41,13 +41,6 @@ function CustomHeader() {
 
   const navigate = useNavigate();
 
-  const handleMinesweeperClick = () => {
-    navigate("/minesweeper"); // Navigate to the Minesweeper page
-  };
-
-  const handleWelcomeClick = () => {
-    navigate("/"); // Navigate to the Welcome page
-  };
 
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
